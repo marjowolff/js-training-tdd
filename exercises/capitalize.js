@@ -8,7 +8,13 @@
  */
 
 // Your code:
-
+const capitalize = (a) => {
+    let mot =a[0].toUpperCase()
+    for (let i=1;i<a.length;i++){
+        mot = mot + a[i].toLowerCase()
+    }
+    return mot
+}
 //* Begin of tests
 const assert = require('assert');
 

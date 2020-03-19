@@ -7,9 +7,13 @@
  */
 
 // Your code:
-
+const yell = (a) => a.toUpperCase()
 //* Begin of tests
 const assert = require('assert');
 
-assert.fail('You must write your own tests');
+assert.strictEqual(typeof yell, 'function');
+assert.strictEqual(yell.length, 1);
+assert.strictEqual(yell('a'), 'A');
+assert.strictEqual(yell('Marjo'), 'MARJO');
+assert.strictEqual(yell(''), '');
 // End of tests */
