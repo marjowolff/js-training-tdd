@@ -7,7 +7,13 @@
  */
 
 // Your code:
-
+const sentence = (a) => {
+    let sen = a[0]
+    for (let i=0 ; i<a.length-1;i++){
+        sen = sen + " " + a[i+1]
+    }
+    return sen
+}
 //* Begin of tests
 const assert = require('assert');
 

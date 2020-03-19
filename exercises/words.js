@@ -7,6 +7,26 @@
  */
 
 // Your code:
+const words = (a) => {
+    let phrase = []
+    let mot = ''
+    for (let i = 0 ; i<(a.length) ; i+=1)
+        {
+            if (a[i]!=' ') {
+                mot = mot + (a[i])} 
+            else if (i==a.length-1){
+                mot = mot + (a[i])
+                phrase.push(mot)}
+            else if (a[i]==' '){
+                phrase.push(mot)
+                mot = ''
+                }
+            
+        }
+    phrase.push(mot)
+    return phrase
+}
+// words('wol.lol lo,lol')
 
 //* Begin of tests
 const assert = require('assert');
